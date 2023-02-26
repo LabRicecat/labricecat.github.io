@@ -64,10 +64,12 @@ header-2 {
     padding-top: 12px;
 }
 
-inline-code {
+inline-code, ic {
     background-color: black;
     border-radius: 4px;
-    padding: 2px;
+    padding: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
     color: var(--code-color);
     font-size: 14px;
 }
@@ -81,6 +83,7 @@ inline-code {
     margin-top: 4px;
     margin-bottom: 4px;
     display: table;
+    text-align: left;
 }
 
 .content-block-collection {

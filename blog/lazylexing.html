@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta author="LabRicecat" />
+    <meta description="A template blog post" />
+    <title>The Lab (Blog)</title>
+    <link rel="stylesheet" type="text/css" href="../global_styles.css" \>
+</head>
+<body>
+    <div class="home-button">
+        <a href="../homepage.html"><< Home sweet home</a>
+    </div>
+
+    <div class="page-title">
+        Lazy Lexing
+    </div>
+    <div class="page-subtitle">
+        Larsing at it's finest
+    </div>
+
+    <header>
+        On Lazy Lexing
+    </header>
+    <paragraph>
+        I came up with this term an I searched for an simple, all around method to tokenize strings. It's also present in nearly all of my projects. <br>
+        So called <important>Lazy Lexing</important> is a sort of lazy tokenization, where "lazy" means, the lexer doesn't care about certain parts, <br>
+        and needs to be called recursively. An exampel for a simple text, would be the <inline-code>InI++</inline-code> file format, as example:
+<pre class="block-code">
+[Data]
+username = "Jim"
+age = 963
+pets = ["Cat","Dog","Turtle"]
+</pre>
+        This defines some simple data about <important>Jim</important>, but we are not interested in the life of a 963 Year old being, <br>
+        we want to know how to parse this stuff, so how do we do it? The lazy lexing approach would be to look for special characters, here for example <inline-code>[]</inline-code>. <br>
+        To us, these symbols are easy to understand, but for the computer they are just as any other symbols. Lazy lexing now says (lazy as it is) <important>"Well, I do not care about this now"</important>,
+        and proceeds to tokenize. An example output could be:
+<pre class="block-code">
+{
+    "[Data]",
+    "username", "=", "\"Jim\"",
+    "age", "=", "963",
+    "pets", "=", "[\"Cat\",\"Dog\",\"Turtle\"]",
+}
+</pre>
+        With this now processed data, we can quickly identify the syntax: <br>
+        <inline-code>[Data]</inline-code> is the only thing inside its line and in square bracets, so it must be a label! Now we only need to get rid of them and we have our name.<br>
+        <inline-code>username</inline-code> a simple token at the begin of a line, this should be a <important>key</important> so we store it and look to the next. <br>
+        <inline-code>=</inline-code> as expected the user gave us an equal sign to indicate that now is coming a value, if here would be something different, we could handle the line differently or throw an error. <br>
+        <inline-code>"Jim"</inline-code> and here is out string value, asign it to our key, and we are good to go. <br>
+        <br>
+        This is the general idea, but what happens with for example <inline-code>["Cat","Dog","Turtle"]</inline-code>, lazy lexing does not care about the content of the list, <br>
+        so we can just get rid of the braces, and call a function to process the list. If there is a list inside the list, we can invoke the lexer again and repeat the cycle. <br>
+        <br>
+    </paragraph>
+    <header-2>
+        Lazy Lexing Pros/Cons
+    </header-2>
+    <paragraph>
+        Lazy lexing is fast, we ignore tokens we don't need at the moment and evaluate them just in time. This on the other hand, can lead to a simple string being lexed multiple times, if we don't store the result. <br>
+        It's also considerably more dynamic! But what does that mean? Consider we have such a function structure:
+<pre class="block-code">
+func foo(a :: Number) {
+    if(a == 0) {
+        bar()
+    }
+    else {
+        baz()
+    }
+}
+
+func bar() {
+    print "BAR"
+}
+
+func baz() {
+    print "BAZ"
+}
+</pre>
+        This defines three functions <ic>foo</ic>,<ic>bar</ic> and <ic>baz</ic>. <ic>foo</ic> calls one of the other functions, based of its parameter (<ic>a</ic>). <br>
+        But our parser is yet not aware of the existence of either <ic>bar</ic> or <ic>baz</ic>. In languages like C, you need to declare them beforehand, <br>
+        but with lazy lexing, the body of the function (the part in the curly braces) is not being lexed, and if we adjust our parser to the lexer, not even parsed. So until we call <ic>foo</ic>, <br>
+        we don't know what's inside, thus also later defined functionallity can be used. <br>
+        <br>
+        But this leads to a big problem with lazy lexing in general, we give up error checking ahead of time. If there is a say lexical error inside a function body, we are unable to detect it. <br>
+        In my opinion though, this is only partially a problem. In the extreme case, we change the parsing and lexing rules <important>while</important> we are running it, lazy lexing would support it. <br>
+        Yet if you, say, make a compiler, this gets less of a problem, as you are forced to evaluate every bit of code, thus can check for errors at compile time. <br>
+    </paragraph>
+
+    <!--<credit-box>
+        <credit-box-title>Credits:</credit-box-title>
+        <ul class="credit-box-list">
+            <li class="credit-box-entry">
+                This cool person
+            </li>
+            <li class="credit-box-entry">
+                Something something website
+            </li>
+        </ul>
+    </credit-box>-->
+</body>
+</html>
