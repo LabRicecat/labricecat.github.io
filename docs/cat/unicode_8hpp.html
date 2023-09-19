@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>config.hpp file | cat</title>
+  <title>base/unicode.hpp file | cat</title>
   <link href="favicon-dark.png" rel="icon" type="image/png"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#22272e" name="theme-color"/>
@@ -54,7 +54,7 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          config.hpp <span class="m-thin">file</span>
+          <span class="m-breadcrumb"><a href="dir_e914ee4d4a44400f1fdb170cb4ead18a.html">base</a>/</span>unicode.hpp <span class="m-thin">file</span>
         </h1>
         <p></p>
         <nav class="m-block m-default poxy-toc" id="poxy-toc">
@@ -64,9 +64,7 @@
               Reference
               <ul>
                 <li><a href="#namespaces">Namespaces</a></li>
-                <li><a href="#func-members">Functions</a></li>
                 <li><a href="#var-members">Variables</a></li>
-                <li><a href="#define-members">Defines</a></li>
               </ul>
             </li>
           </ul>
@@ -76,57 +74,7 @@
           <dl class="m-doc">
             <dt>namespace <a class="m-doc" href="namespacecat.html">cat</a></dt>
             <dd></dd>
-            <dt>namespace <a class="m-doc" href="namespacecat_1_1config.html">cat::config</a></dt>
-            <dd></dd>
-          </dl>
-        </section>
-        <section id="func-members">
-          <h2><a href="#func-members">Functions</a></h2>
-          <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespacecat_1_1config.html#aecde0ac940a5a0a24bb5436ca85554ab">add_default</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; adefault) -&gt; <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp;</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespacecat_1_1config.html#ac40959c512f702a6cd56f3118f46e00e">apply</a>(</span><span class="m-doc-wrap">)</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespacecat_1_1config.html#a2407621dfd1cfda0dbecdb9290551e44">at</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/filesystem/path.html" target="_blank">fs::<wbr/>path</a>&amp; path)</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">IniType type = IniType::Null</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespacecat_1_1config.html#ab77a895c0ae41e81bb6705f0c7917cd9">ensure</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; key,
-              const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; section = "Main",
-              const IniElement&amp; value = IniElement())</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename T = IniElement</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespacecat_1_1config.html#a0829fdb8309475c3fe9d8aefefbceb18">get</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; key,
-              const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; section = "Main") -&gt; T</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename T = IniElement</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespacecat_1_1config.html#a4190267b99def96c4ad54517f4730d4b">get_or</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; key,
-              const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; section,
-              const T&amp; g_or) -&gt; T</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespacecat_1_1config.html#a36d3ed812520d508af61b3f8f8b1aa97">has</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; key,
-              const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; section = "Main") -&gt; bool</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespacecat_1_1config.html#a133fa366a698062586a0502787fe1863">sync</a>(</span><span class="m-doc-wrap">)</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespacecat_1_1config.html#a283896ac4958f990f6273fd6f1fd9224">write_default</a>(</span><span class="m-doc-wrap">)</span>
-            </dt>
+            <dt>namespace <a class="m-doc" href="namespacecat_1_1uc.html">cat::uc</a></dt>
             <dd></dd>
           </dl>
         </section>
@@ -134,32 +82,227 @@
           <h2><a href="#var-members">Variables</a></h2>
           <dl class="m-doc">
             <dt>
-              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a> <a class="m-doc" href="namespacecat_1_1config.html#a7f2140f4be37f46d45c07326f1b22b7a">config_defaults</a>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ac61665b65431910f9b05d022e6f4b75c">arrow_down</a>
             </dt>
             <dd></dd>
             <dt>
-              signals::signal <a class="m-doc" href="namespacecat_1_1config.html#a0bb70764da6352c9dbfb92070cc6bd59">config_error</a>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#aec5652ff209053c5601b2cb80d47cacd">arrow_left</a>
             </dt>
             <dd></dd>
             <dt>
-              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/filesystem/path.html" target="_blank">fs::<wbr/>path</a> <a class="m-doc" href="namespacecat_1_1config.html#a80e18d841576299fb5975435efdfd317">config_file</a>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#af562f4675d3070e06bf9eec8670cc9ca">arrow_left_right</a>
             </dt>
             <dd></dd>
             <dt>
-              IniFile <a class="m-doc" href="namespacecat_1_1config.html#a0680d21caa935045f6aa7c6772b1bee6">config_mirror</a>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a32a7600ebf77144ff53613b5b22f9430">arrow_right</a>
             </dt>
             <dd></dd>
             <dt>
-              bool <a class="m-doc" href="namespacecat_1_1config.html#a5752f06260d4a2f24618e144d978cd02">opened</a>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#acadb5fc42c1ab6a93c5c7d3dd0423cde">arrow_up</a>
             </dt>
             <dd></dd>
-          </dl>
-        </section>
-        <section id="define-members">
-          <h2><a href="#define-members">Defines</a></h2>
-          <dl class="m-doc">
-            <dt id="aba51915c87d64af47fb1cc59348961c9">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#aba51915c87d64af47fb1cc59348961c9">OK</a></span>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ac26e469656a7077263e5dbe58e2b7a7f">arrow_up_down</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ad3fd7c8c11cdf859813f2dc24d7e8264">arrow_up_down_b</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ad39b657050b14f8cb56fbc954015b0dd">cent</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a03444a94f243d642adf8c7e0ce67ea5b">club</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#aabf1d86bbf7b6a9606ad4aa87f36f4fd">corner_hh_left</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a0f0454f15099afee25cfb24ee3ca3d72">corner_hl_left</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a70c0263cdb7fb6c29584f1a032a109a7">corner_lh_left</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ac83ced2a7dce80dbdbe4aa2960b49a9e">crossing_hh_left</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a464862a8600173aba72e00aa6f1a5fb0">crossing_hl_left</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a2fc9c3b27b01a64a22161a32361f282a">crossing_lh_left</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#afdecf495716a6a17ebcbfddb3ae5b56d">crossing_ll_left</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a9cede44e0e18799a60dde80629f4e1e7">dark_shade</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a931bca81585de29a3844ddb0bd59e56d">diamond</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a6107832309b17a13d26baeebd62093e3">double_arrowleft</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a49c1685acfa4a728dbda6ea6e1507eec">double_arrowright</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a38e5cb7196ae14c836aeabe03b09c54b">double_exlam</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#aaa204986cffb80518a49796268154da5">exclamation_inv</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a70bc681810844b96038442d0048b49e1">f_hook</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a8c4322954ba9908cd64da584112520be">female</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#aaaac0a7db324871d4c7cbf5ce294840d">half</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a32a2f3ed59de5608fe818f8c0dfae68f">heart</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a3c0f75fd490137a62c7ea9e5d04b9e9b">house</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ace8b68fcb7b81529d4148bac6c6311a6">light_shade</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#aa42614e2674c0b05f023aa288f7a2417">male</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a9c5a10238c40d10a71afe373995a414d">medium_shade</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a7d970887708f7bfdba7fb6959552d765">negation_left</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a547d5a4d835aa52285dfd9ce9c7c0ba5">negation_right</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a8c8e0b081ca95c3c4a1273b361ee0058">note1</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#aba3de037a39dcc09dde47ba7e0a3d2f9">note2</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a811bdc54772ec51c491c2e4731664955">pilcrow</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ad8c73c6078e4660121340e2ba03f2a96">pointer_left</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a7544f3756a6eac2d66a7e813f626211a">pointer_right</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a5299060867c02297a0046698aab45bbf">pound</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ab9f40a27e129b2be3644a18778430bd1">quater</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a71b625cbbad4dd26033e65afb7b01896">questionmark_inv</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ae909530a7c007ae1b5266d80ad55c3c2">rectangle</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a59e51dc78887c71863d681bf49791938">right_angle</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a7bf8af58a50a897e99bd5fb6453f59b4">section</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a52e5a6f361fbb8756bdf8219e74ee71b">smile1</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ab1384b7446e16f0b60b26c7328950560">smile2</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#affd6b52124485a98a8cd4754253a0630">solar</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#aa56eba50f9af2cd51d02a4f934d49c73">spade</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a20810c4e94247c8bbf113db86c151b1c">spot1</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a44d1fc5f111968924d45f0d4b8672c96">spot2</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ad63040bb85e06081acdc13ccb7537333">square</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ac49236713d25188145e9f18acad960ce">triangle_down</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ac4f976fa1fdb7dfaf0520b623efcbb7b">triangle_up</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#aba6aebca7565efb102630f33fdd31b58">vertical_h</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#ab9b5356c266096eb7694b0906560a2f4">vertical_l</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a49f71206614dc265fcd2eb12ee282086">yen</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              const CatString <a class="m-doc" href="namespacecat_1_1uc.html#a607da732b5d84bf5ac7eb073d09ffadc">yuan</a>
             </dt>
             <dd></dd>
           </dl>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>cat::lib::HorizontalContainer class | cat</title>
+  <title>cat::HorizontalContainer class | cat</title>
   <link href="favicon-dark.png" rel="icon" type="image/png"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#22272e" name="theme-color"/>
@@ -54,8 +54,8 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespacecat.html">cat</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecat_1_1lib.html">lib</a>::<wbr/></span>HorizontalContainer <span class="m-thin">class</span>
-          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="containers_8hpp.html">&lt;library/containers.hpp&gt;</a></div>
+          <span class="m-breadcrumb"><a href="namespacecat.html">cat</a>::<wbr/></span>HorizontalContainer <span class="m-thin">class</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="horizontal_8hpp.html">&lt;container/horizontal.hpp&gt;</a></div>
         </h1>
         <p></p>
         <nav class="m-block m-default poxy-toc" id="poxy-toc">
@@ -77,7 +77,7 @@
           <h2><a href="#base-classes">Base classes</a></h2>
           <dl class="m-doc">
             <dt>
-              class <a class="m-doc" href="classcat_1_1_container.html">cat::Container</a>
+              class <a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/Container" target="_blank">Container</a>
             </dt>
             <dd></dd>
           </dl>
@@ -108,8 +108,8 @@
               <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="classcat_1_1_container.html#afa3f46f52d5ae61293ab3fd12a5b2467">add</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* window) -&gt; <a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-label m-flat m-warning">virtual</span></span>
             </dt>
             <dd></dd>
-            <dt id="a3f3dd1980ebadd8d4f73f8d335a96030">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a3f3dd1980ebadd8d4f73f8d335a96030">apply</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/Container" target="_blank">Container</a>&amp; <span class="m-label m-flat m-warning">override</span></span>
+            <dt id="a4a7d69f15205c318d61c0a4d88e715d1">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a4a7d69f15205c318d61c0a4d88e715d1">apply</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/Container" target="_blank">Container</a>&amp; <span class="m-label m-flat m-warning">override</span></span>
             </dt>
             <dd></dd>
             <dt>
@@ -211,8 +211,8 @@
           <h2>Typedef documentation</h2>
           <section class="m-doc-details" id="a06caeedffccba5620befbc4a4bf481d2"><div>
             <h3>
-              using <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span><a class="m-doc-self" href="#a06caeedffccba5620befbc4a4bf481d2">apply_event</a> = <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;void(<a class="m-doc" href="classcat_1_1_window.html">Window</a>*)&gt;
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              using <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span><a class="m-doc-self" href="#a06caeedffccba5620befbc4a4bf481d2">apply_event</a> = <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;void(<a class="m-doc" href="classcat_1_1_window.html">Window</a>*)&gt;
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
@@ -221,134 +221,134 @@
           <h2>Function documentation</h2>
           <section class="m-doc-details" id="afa3f46f52d5ae61293ab3fd12a5b2467"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#afa3f46f52d5ae61293ab3fd12a5b2467">add</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* window) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#afa3f46f52d5ae61293ab3fd12a5b2467">add</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* window) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a6ac1bb4065a8d9e0e7cf7c7d6ffb4319"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a6ac1bb4065a8d9e0e7cf7c7d6ffb4319">at</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> index) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a6ac1bb4065a8d9e0e7cf7c7d6ffb4319">at</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> index) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a9d90923f43a7f41324e1d9f8a5c9aac4"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">const <a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a9d90923f43a7f41324e1d9f8a5c9aac4">at</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> index) const <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper">const <a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a9d90923f43a7f41324e1d9f8a5c9aac4">at</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> index) const <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a2916e90a0392b42bc84a68e976d009c2"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a2916e90a0392b42bc84a68e976d009c2">back</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a2916e90a0392b42bc84a68e976d009c2">back</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a69f6025cd08125c0b66fc8f5dbeb0a2a"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">const <a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a69f6025cd08125c0b66fc8f5dbeb0a2a">back</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper">const <a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a69f6025cd08125c0b66fc8f5dbeb0a2a">back</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="ab4cf4d3d345867fcc94ef4d46e5f8373"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html">Window</a>*&gt;::iterator <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ab4cf4d3d345867fcc94ef4d46e5f8373">begin</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html">Window</a>*&gt;::iterator <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ab4cf4d3d345867fcc94ef4d46e5f8373">begin</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a7fe8a66e8210d059b5cdfab42202719e"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html">Window</a>*&gt;::const_iterator <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a7fe8a66e8210d059b5cdfab42202719e">begin</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html">Window</a>*&gt;::const_iterator <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a7fe8a66e8210d059b5cdfab42202719e">begin</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="acca5a3255757392a0f22d26875ec42bc"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html">Window</a>*&gt;::iterator <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#acca5a3255757392a0f22d26875ec42bc">end</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html">Window</a>*&gt;::iterator <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#acca5a3255757392a0f22d26875ec42bc">end</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="aee33afe4f4b828b88289c9efd397491c"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html">Window</a>*&gt;::const_iterator <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aee33afe4f4b828b88289c9efd397491c">end</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html">Window</a>*&gt;::const_iterator <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aee33afe4f4b828b88289c9efd397491c">end</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="af467e637ab1dfe7d7188b6b352743e42"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#af467e637ab1dfe7d7188b6b352743e42">entries</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#af467e637ab1dfe7d7188b6b352743e42">entries</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a29fe28da6a14a7cd2009c583ce8c0314"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a29fe28da6a14a7cd2009c583ce8c0314">front</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a29fe28da6a14a7cd2009c583ce8c0314">front</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a44384d5570415387bea02b66af05a4c6"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">const <a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a44384d5570415387bea02b66af05a4c6">front</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper">const <a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a44384d5570415387bea02b66af05a4c6">front</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="aa5ee6d81cfdc2b596175cf23ef9fe54a"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aa5ee6d81cfdc2b596175cf23ef9fe54a">get_position</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;positional.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aa5ee6d81cfdc2b596175cf23ef9fe54a">get_position</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;base/positional.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="afa7439670836aeaf8544bfa506c21ca1"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#afa7439670836aeaf8544bfa506c21ca1">get_resolution</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;positional.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#afa7439670836aeaf8544bfa506c21ca1">get_resolution</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;base/positional.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a0fcdcc96eea9f1e89c381ff42618a86d"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/Container" target="_blank">Container</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a0fcdcc96eea9f1e89c381ff42618a86d">move</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; position) <span class="m-label m-warning">override</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/Container" target="_blank">Container</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a0fcdcc96eea9f1e89c381ff42618a86d">move</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; position) <span class="m-label m-warning">override</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="ae037d81f787a924f11c7832dc6577501"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/Container" target="_blank">Container</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ae037d81f787a924f11c7832dc6577501">on_apply</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="classcat_1_1_container.html#a06caeedffccba5620befbc4a4bf481d2">apply_<wbr/>event</a>&amp; event) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/Container" target="_blank">Container</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ae037d81f787a924f11c7832dc6577501">on_apply</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="classcat_1_1_container.html#a06caeedffccba5620befbc4a4bf481d2">apply_<wbr/>event</a>&amp; event) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a50dc694f52f3d450784c3440485d2230"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a50dc694f52f3d450784c3440485d2230">operator[]</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> index) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a50dc694f52f3d450784c3440485d2230">operator[]</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> index) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a4881409eef5689843a53f9508773c688"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a4881409eef5689843a53f9508773c688">pop</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* window) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a4881409eef5689843a53f9508773c688">pop</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* window) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="abb3af89551310e0f009387272fccffa7"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/Container" target="_blank">Container</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#abb3af89551310e0f009387272fccffa7">resize</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; resolution) <span class="m-label m-warning">override</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/Container" target="_blank">Container</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#abb3af89551310e0f009387272fccffa7">resize</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; resolution) <span class="m-label m-warning">override</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
@@ -357,29 +357,29 @@
           <h2>Variable documentation</h2>
           <section class="m-doc-details" id="a081d0791533374fd1cdae0a2b0712c78"><div>
             <h3>
-              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html">Window</a>*&gt; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span><a class="m-doc-self" href="#a081d0791533374fd1cdae0a2b0712c78">windows</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html">Window</a>*&gt; <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span><a class="m-doc-self" href="#a081d0791533374fd1cdae0a2b0712c78">windows</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a254e07bbe7386380c197301f2fd7ec9d"><div>
             <h3>
-              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_container.html#a06caeedffccba5620befbc4a4bf481d2">apply_<wbr/>event</a>&gt; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span><a class="m-doc-self" href="#a254e07bbe7386380c197301f2fd7ec9d">events</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;container.hpp&gt;</a></div>
+              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_container.html#a06caeedffccba5620befbc4a4bf481d2">apply_<wbr/>event</a>&gt; <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span><a class="m-doc-self" href="#a254e07bbe7386380c197301f2fd7ec9d">events</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="container_8hpp.html">&lt;base/container.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a55b93443595ca27fa02b6cae909c8ad9"><div>
             <h3>
-              <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span><a class="m-doc-self" href="#a55b93443595ca27fa02b6cae909c8ad9">position</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;positional.hpp&gt;</a></div>
+              <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span><a class="m-doc-self" href="#a55b93443595ca27fa02b6cae909c8ad9">position</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;base/positional.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="ac97e987e9fa5475f147152d69c3a3ea3"><div>
             <h3>
-              <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>HorizontalContainer::<wbr/></span><a class="m-doc-self" href="#ac97e987e9fa5475f147152d69c3a3ea3">resolution</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;positional.hpp&gt;</a></div>
+              <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>HorizontalContainer::<wbr/></span><a class="m-doc-self" href="#ac97e987e9fa5475f147152d69c3a3ea3">resolution</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;base/positional.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>

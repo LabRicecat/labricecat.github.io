@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>cat::lib::BasicShell class | cat</title>
+  <title>cat::InputField class | cat</title>
   <link href="favicon-dark.png" rel="icon" type="image/png"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#22272e" name="theme-color"/>
@@ -54,8 +54,8 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespacecat.html">cat</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecat_1_1lib.html">lib</a>::<wbr/></span>BasicShell <span class="m-thin">class</span>
-          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="windows_8hpp.html">&lt;library/windows.hpp&gt;</a></div>
+          <span class="m-breadcrumb"><a href="namespacecat.html">cat</a>::<wbr/></span>InputField <span class="m-thin">class</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="inputfield_8hpp.html">&lt;window/inputfield.hpp&gt;</a></div>
         </h1>
         <p></p>
         <nav class="m-block m-default poxy-toc" id="poxy-toc">
@@ -66,6 +66,7 @@
               <ul>
                 <li><a href="#base-classes">Base classes</a></li>
                 <li><a href="#pub-types">Public types</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
                 <li><a href="#pub-methods">Public functions</a></li>
                 <li><a href="#pro-types">Protected types</a></li>
                 <li><a href="#pro-attribs">Protected variables</a></li>
@@ -77,7 +78,7 @@
           <h2><a href="#base-classes">Base classes</a></h2>
           <dl class="m-doc">
             <dt>
-              class <a class="m-doc" href="classcat_1_1_window.html">cat::Window</a>
+              class <a class="m-doc" href="classcat_1_1_window.html">Window</a>
             </dt>
             <dd></dd>
           </dl>
@@ -91,6 +92,16 @@
             <dd></dd>
             <dt>
               using <a class="m-doc" href="classcat_1_1_window.html#a9bd6a16dbf97be857ffd5b4941e5bbec">redraw_event</a> = <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;void(<a class="m-doc" href="classcat_1_1_window.html">Window</a>*)&gt;
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt id="af423e1bc1a5608632f1a908ee0b1d967">
+              <span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#af423e1bc1a5608632f1a908ee0b1d967">InputField</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; position,
+              const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; resolution)</span>
             </dt>
             <dd></dd>
           </dl>
@@ -334,29 +345,29 @@
           <h2>Typedef documentation</h2>
           <section class="m-doc-details" id="a31205c1d1a7dc0dc713f172c4e58b83b"><div>
             <h3>
-              using <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a31205c1d1a7dc0dc713f172c4e58b83b">focus_event</a> = <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;void(<a class="m-doc" href="classcat_1_1_window.html">Window</a>*, bool)&gt;
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              using <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a31205c1d1a7dc0dc713f172c4e58b83b">focus_event</a> = <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;void(<a class="m-doc" href="classcat_1_1_window.html">Window</a>*, bool)&gt;
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a9bd6a16dbf97be857ffd5b4941e5bbec"><div>
             <h3>
-              using <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a9bd6a16dbf97be857ffd5b4941e5bbec">redraw_event</a> = <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;void(<a class="m-doc" href="classcat_1_1_window.html">Window</a>*)&gt;
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              using <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a9bd6a16dbf97be857ffd5b4941e5bbec">redraw_event</a> = <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;void(<a class="m-doc" href="classcat_1_1_window.html">Window</a>*)&gt;
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a2728bb49a94dc45d6d6d9940cd2c8141"><div>
             <h3>
-              using <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a2728bb49a94dc45d6d6d9940cd2c8141">key_checker_type</a> = <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;bool(const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp;)&gt; <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              using <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a2728bb49a94dc45d6d6d9940cd2c8141">key_checker_type</a> = <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;bool(const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp;)&gt; <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a3caa7168a2df9e2c2a4f1cf4fe29e2e3"><div>
             <h3>
-              using <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a3caa7168a2df9e2c2a4f1cf4fe29e2e3">key_handler_type</a> = <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;void(const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp;)&gt; <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              using <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a3caa7168a2df9e2c2a4f1cf4fe29e2e3">key_handler_type</a> = <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;void(const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp;)&gt; <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
@@ -365,65 +376,65 @@
           <h2>Function documentation</h2>
           <section class="m-doc-details" id="a1c44adf1b902d3625b59bf485c90f916"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a1c44adf1b902d3625b59bf485c90f916">adopt</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* win) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a1c44adf1b902d3625b59bf485c90f916">adopt</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* win) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a9f624f957b3905e4d3f14904f575bbbf"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a9f624f957b3905e4d3f14904f575bbbf">background</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespacecat_1_1effect.html#a365cb21a52474cc0b996c6c6de275194">effect::<wbr/>color</a>&amp; color) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a9f624f957b3905e4d3f14904f575bbbf">background</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespacecat_1_1effect.html#a365cb21a52474cc0b996c6c6de275194">effect::<wbr/>color</a>&amp; color) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a1547ed7e0b41e4b0ca9f2f0261e9dd7e"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a1547ed7e0b41e4b0ca9f2f0261e9dd7e">box</a>(</span><span class="m-doc-wrap">int chtype = 0) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a1547ed7e0b41e4b0ca9f2f0261e9dd7e">box</a>(</span><span class="m-doc-wrap">int chtype = 0) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a8579eb116a47405cfce09550fe5fe946"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a8579eb116a47405cfce09550fe5fe946">clear</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a8579eb116a47405cfce09550fe5fe946">clear</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a29df65e82266c0d9a8f43c15c945246d"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a29df65e82266c0d9a8f43c15c945246d">cursor</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; position,
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a29df65e82266c0d9a8f43c15c945246d">cursor</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; position,
               bool absolute = false) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a0d00c5ef817896d70f88d4c5312ea7b1"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">bool <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a0d00c5ef817896d70f88d4c5312ea7b1">do_key_check</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp; skey) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper">bool <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a0d00c5ef817896d70f88d4c5312ea7b1">do_key_check</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp; skey) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a17569d2be27290712efc0ce600478105"><div>
             <h3>
-              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
               <div class="m-doc-template">
                 template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename ... Tfargs</span></span>&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a17569d2be27290712efc0ce600478105">draw</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="classcat_1_1_cat_string.html">CatString</a>&amp; fmstr,
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a17569d2be27290712efc0ce600478105">draw</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="classcat_1_1_cat_string.html">CatString</a>&amp; fmstr,
               const Tfargs&amp;... fargs)</span></span>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a5f4fb82ef78e44a62c9398e88da0d3f8"><div>
             <h3>
-              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
               <div class="m-doc-template">
                 template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename ... Tfargs</span></span>&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a5f4fb82ef78e44a62c9398e88da0d3f8">draw_at</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; position,
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a5f4fb82ef78e44a62c9398e88da0d3f8">draw_at</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; position,
               const <a class="m-doc" href="classcat_1_1_cat_string.html">CatString</a>&amp; fmstr,
               const Tfargs&amp;... fargs)</span></span>
             </h3>
@@ -431,209 +442,209 @@
           </div></section>
           <section class="m-doc-details" id="ade8447df97f72006ec040696218e20d4"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ade8447df97f72006ec040696218e20d4">draw_buffer</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; offset = {0, 0}) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ade8447df97f72006ec040696218e20d4">draw_buffer</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; offset = {0, 0}) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a99500ad5ec0ee2e1dfbfacc59f25c4bb"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a99500ad5ec0ee2e1dfbfacc59f25c4bb">duplicate</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a> <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a99500ad5ec0ee2e1dfbfacc59f25c4bb">duplicate</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="af39ae4a0e6f2a86c1cb6811f420bba7d"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#af39ae4a0e6f2a86c1cb6811f420bba7d">focus</a>(</span><span class="m-doc-wrap">bool status = true) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#af39ae4a0e6f2a86c1cb6811f420bba7d">focus</a>(</span><span class="m-doc-wrap">bool status = true) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a4c315766da3a8d4582ed750504292d5a"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">bool <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a4c315766da3a8d4582ed750504292d5a">focused</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper">bool <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a4c315766da3a8d4582ed750504292d5a">focused</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a17e443113067c603cdf29d2ed0a6ad86"><div>
             <h3>
-              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
               <div class="m-doc-template">
                 template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename TBuffer = <a class="m-doc" href="classcat_1_1_buffer.html">Buffer</a></span></span>&gt;
               </div>
-              <span class="m-doc-wrap-bumper">TBuffer* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a17e443113067c603cdf29d2ed0a6ad86">get_buffer</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper">TBuffer* <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a17e443113067c603cdf29d2ed0a6ad86">get_buffer</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a3706f6090fd0f888e364d85551f55d0a"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">const <a class="m-doc" href="namespacecat.html#a3d03a98ba16ebc8920ce3b3cd672d54b">id_<wbr/>type</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a3706f6090fd0f888e364d85551f55d0a">get_id</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper">const <a class="m-doc" href="namespacecat.html#a3d03a98ba16ebc8920ce3b3cd672d54b">id_<wbr/>type</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a3706f6090fd0f888e364d85551f55d0a">get_id</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a1fe9fe8961cad0c3f52cd1c73fda7ca8"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">const <a class="m-doc" href="classcat_1_1_window.html#a2728bb49a94dc45d6d6d9940cd2c8141">key_<wbr/>checker_<wbr/>type</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a1fe9fe8961cad0c3f52cd1c73fda7ca8">get_key_check</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper">const <a class="m-doc" href="classcat_1_1_window.html#a2728bb49a94dc45d6d6d9940cd2c8141">key_<wbr/>checker_<wbr/>type</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a1fe9fe8961cad0c3f52cd1c73fda7ca8">get_key_check</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a38b5e9280b34abf747e490624b096ac9"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespacecat.html#a46504b334e77c132e83bd405fdcafd1b">key_<wbr/>event</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a38b5e9280b34abf747e490624b096ac9">get_key_event</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp; skey) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespacecat.html#a46504b334e77c132e83bd405fdcafd1b">key_<wbr/>event</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a38b5e9280b34abf747e490624b096ac9">get_key_event</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp; skey) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a593fb80cb35de710faa11a74cd85f82f"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">const <a class="m-doc" href="classcat_1_1_window.html#a3caa7168a2df9e2c2a4f1cf4fe29e2e3">key_<wbr/>handler_<wbr/>type</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a593fb80cb35de710faa11a74cd85f82f">get_key_handler</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper">const <a class="m-doc" href="classcat_1_1_window.html#a3caa7168a2df9e2c2a4f1cf4fe29e2e3">key_<wbr/>handler_<wbr/>type</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a593fb80cb35de710faa11a74cd85f82f">get_key_handler</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="aa5ee6d81cfdc2b596175cf23ef9fe54a"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aa5ee6d81cfdc2b596175cf23ef9fe54a">get_position</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;positional.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aa5ee6d81cfdc2b596175cf23ef9fe54a">get_position</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;base/positional.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="afa7439670836aeaf8544bfa506c21ca1"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#afa7439670836aeaf8544bfa506c21ca1">get_resolution</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;positional.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#afa7439670836aeaf8544bfa506c21ca1">get_resolution</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;base/positional.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="ac77de6a70ed185f9b74ef6b4c3ea9bb2"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">bool <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ac77de6a70ed185f9b74ef6b4c3ea9bb2">has_key</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp; skey) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper">bool <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ac77de6a70ed185f9b74ef6b4c3ea9bb2">has_key</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp; skey) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="ab4832c29fa82ac4ea194d324b90c3c7d"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">bool <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ab4832c29fa82ac4ea194d324b90c3c7d">hidden</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper">bool <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ab4832c29fa82ac4ea194d324b90c3c7d">hidden</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a26b7076c9bab6adb663810b39f7dc077"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a26b7076c9bab6adb663810b39f7dc077">hide</a>(</span><span class="m-doc-wrap">bool status = true) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a26b7076c9bab6adb663810b39f7dc077">hide</a>(</span><span class="m-doc-wrap">bool status = true) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="aff173bb2719a58c0a8e9bf409d4fa556"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aff173bb2719a58c0a8e9bf409d4fa556">lose_focus</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aff173bb2719a58c0a8e9bf409d4fa556">lose_focus</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a7da4ff1aa75d8d33f16eadb4ec6d1ee2"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a7da4ff1aa75d8d33f16eadb4ec6d1ee2">move</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; position) <span class="m-label m-warning">override</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a7da4ff1aa75d8d33f16eadb4ec6d1ee2">move</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; position) <span class="m-label m-warning">override</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a41be4e8ea68cd412161edde6467bd440"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a41be4e8ea68cd412161edde6467bd440">on_focus</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="classcat_1_1_window.html#a31205c1d1a7dc0dc713f172c4e58b83b">focus_<wbr/>event</a>&amp; event) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a41be4e8ea68cd412161edde6467bd440">on_focus</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="classcat_1_1_window.html#a31205c1d1a7dc0dc713f172c4e58b83b">focus_<wbr/>event</a>&amp; event) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a57af7a69a4c995e3cdbac871581fbd75"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a57af7a69a4c995e3cdbac871581fbd75">on_redraw</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="classcat_1_1_window.html#a9bd6a16dbf97be857ffd5b4941e5bbec">redraw_<wbr/>event</a>&amp; event) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a57af7a69a4c995e3cdbac871581fbd75">on_redraw</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="classcat_1_1_window.html#a9bd6a16dbf97be857ffd5b4941e5bbec">redraw_<wbr/>event</a>&amp; event) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a73bac76155bd991ea4b04cd61c29c57c"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a73bac76155bd991ea4b04cd61c29c57c">redraw</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a73bac76155bd991ea4b04cd61c29c57c">redraw</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="aabc13eacf26ada65f8a8f978357258ee"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aabc13eacf26ada65f8a8f978357258ee">resize</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; resolution) <span class="m-label m-warning">override</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aabc13eacf26ada65f8a8f978357258ee">resize</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a>&amp; resolution) <span class="m-label m-warning">override</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="afc652b549ed7c7be8d93c6f99bb276cf"><div>
             <h3>
-              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
               <div class="m-doc-template">
                 template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename TBuffer = <a class="m-doc" href="classcat_1_1_buffer.html">Buffer</a></span></span>&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#afc652b549ed7c7be8d93c6f99bb276cf">set_buffer</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespacecat.html#abd77a5f8f9a559e1be8ad238cd4a842d">Renderer</a> renderer = <a class="m-doc" href="structcat_1_1_processor.html#af2de2ae44a6907e504308e487d989dc2">Renderer::<wbr/>null</a>,
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#afc652b549ed7c7be8d93c6f99bb276cf">set_buffer</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespacecat.html#abd77a5f8f9a559e1be8ad238cd4a842d">Renderer</a> renderer = <a class="m-doc" href="structcat_1_1_processor.html#af2de2ae44a6907e504308e487d989dc2">Renderer::<wbr/>null</a>,
               <a class="m-doc" href="namespacecat.html#a42a11d320a68cf9b9622b72c7566bb31">Composer</a> composer = <a class="m-doc" href="structcat_1_1_processor.html#af2de2ae44a6907e504308e487d989dc2">Composer::<wbr/>null</a>)</span></span>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a666679ceffe88089fb367bd829830235"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a666679ceffe88089fb367bd829830235">set_key</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp; skey,
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a666679ceffe88089fb367bd829830235">set_key</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp; skey,
               const <a class="m-doc" href="namespacecat.html#a46504b334e77c132e83bd405fdcafd1b">key_<wbr/>event</a>&amp; event) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a9009d885ab963eae85f2dec4a02b653e"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a9009d885ab963eae85f2dec4a02b653e">set_key_handler</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="classcat_1_1_window.html#a2728bb49a94dc45d6d6d9940cd2c8141">key_<wbr/>checker_<wbr/>type</a>&amp; check,
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a9009d885ab963eae85f2dec4a02b653e">set_key_handler</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="classcat_1_1_window.html#a2728bb49a94dc45d6d6d9940cd2c8141">key_<wbr/>checker_<wbr/>type</a>&amp; check,
               const <a class="m-doc" href="classcat_1_1_window.html#a3caa7168a2df9e2c2a4f1cf4fe29e2e3">key_<wbr/>handler_<wbr/>type</a>&amp; handler) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a60bb39c0e0e3ad06a7b6270aeb14939c"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a60bb39c0e0e3ad06a7b6270aeb14939c">sync</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a60bb39c0e0e3ad06a7b6270aeb14939c">sync</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a85857ba3cdebd1e7cea8df90b38a4aa9"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a85857ba3cdebd1e7cea8df90b38a4aa9">trigger_syncs</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a85857ba3cdebd1e7cea8df90b38a4aa9">trigger_syncs</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="ac08976909ab49a8e8980fb74fe72ba1c"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ac08976909ab49a8e8980fb74fe72ba1c">unhide</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ac08976909ab49a8e8980fb74fe72ba1c">unhide</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a5a0ed55240f9518cef469e4d4f2ca128"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a5a0ed55240f9518cef469e4d4f2ca128">unset_key</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp; skey) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a5a0ed55240f9518cef469e4d4f2ca128">unset_key</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespacecat.html#a9bedec76f31ed6d6b6aa354f79c214ba">key</a>&amp; skey) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="ac9e14d2fbe34dbe743ece3fd91d63473"><div>
             <h3>
-              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
               <div class="m-doc-template">
                 template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename TWindow</span></span>&gt;
               </div>
-              <span class="m-doc-wrap-bumper">bool <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ac9e14d2fbe34dbe743ece3fd91d63473">viable_as</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper">bool <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ac9e14d2fbe34dbe743ece3fd91d63473">viable_as</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <p></p>
           </div></section>
@@ -642,99 +653,99 @@
           <h2>Variable documentation</h2>
           <section class="m-doc-details" id="a7b251953404dcfe76a9ed75014242940"><div>
             <h3>
-              WINDOW* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a7b251953404dcfe76a9ed75014242940">ncurses_window</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              WINDOW* <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a7b251953404dcfe76a9ed75014242940">ncurses_window</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="abb94e60ee03294b9bae3b2ab7b09b941"><div>
             <h3>
-              bool <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#abb94e60ee03294b9bae3b2ab7b09b941">redraw_request</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              bool <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#abb94e60ee03294b9bae3b2ab7b09b941">redraw_request</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a14a604ff1c2fd5d71c89cfcf7c2c917b"><div>
             <h3>
-              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html">Window</a>*&gt; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a14a604ff1c2fd5d71c89cfcf7c2c917b">syncs</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html">Window</a>*&gt; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a14a604ff1c2fd5d71c89cfcf7c2c917b">syncs</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a7862d18042d0f173babb2428c6687df8"><div>
             <h3>
-              bool <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a7862d18042d0f173babb2428c6687df8">is_focused</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              bool <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a7862d18042d0f173babb2428c6687df8">is_focused</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a9557b5c01bcecfd0247d41cf792d9097"><div>
             <h3>
-              bool <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a9557b5c01bcecfd0247d41cf792d9097">is_hidden</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              bool <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a9557b5c01bcecfd0247d41cf792d9097">is_hidden</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="af65385a476fca29ea6f47db2643230e0"><div>
             <h3>
-              <a class="m-doc" href="namespacecat.html#a8c836b79359fef361386614e80394c2b">keymap</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#af65385a476fca29ea6f47db2643230e0">win_keymap</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <a class="m-doc" href="namespacecat.html#a8c836b79359fef361386614e80394c2b">keymap</a> <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#af65385a476fca29ea6f47db2643230e0">win_keymap</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a70b4ce1a7850cb4098a2e921866d6643"><div>
             <h3>
-              <a class="m-doc" href="classcat_1_1_window.html#a3caa7168a2df9e2c2a4f1cf4fe29e2e3">key_<wbr/>handler_<wbr/>type</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a70b4ce1a7850cb4098a2e921866d6643">key_handler</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <a class="m-doc" href="classcat_1_1_window.html#a3caa7168a2df9e2c2a4f1cf4fe29e2e3">key_<wbr/>handler_<wbr/>type</a> <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a70b4ce1a7850cb4098a2e921866d6643">key_handler</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="aff45a4ee5408f307de3f8d3df607d0b1"><div>
             <h3>
-              <a class="m-doc" href="classcat_1_1_window.html#a2728bb49a94dc45d6d6d9940cd2c8141">key_<wbr/>checker_<wbr/>type</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#aff45a4ee5408f307de3f8d3df607d0b1">key_check</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <a class="m-doc" href="classcat_1_1_window.html#a2728bb49a94dc45d6d6d9940cd2c8141">key_<wbr/>checker_<wbr/>type</a> <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#aff45a4ee5408f307de3f8d3df607d0b1">key_check</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a673f5cf4b71e8cf98f2812eb06451858"><div>
             <h3>
-              <a class="m-doc" href="namespacecat.html#a3d03a98ba16ebc8920ce3b3cd672d54b">id_<wbr/>type</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a673f5cf4b71e8cf98f2812eb06451858">id</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <a class="m-doc" href="namespacecat.html#a3d03a98ba16ebc8920ce3b3cd672d54b">id_<wbr/>type</a> <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a673f5cf4b71e8cf98f2812eb06451858">id</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a2a5c63d683f8eacf51241ba809b8d8e0"><div>
             <h3>
-              <a class="m-doc" href="classcat_1_1_buffer.html">Buffer</a>* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a2a5c63d683f8eacf51241ba809b8d8e0">buffer</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <a class="m-doc" href="classcat_1_1_buffer.html">Buffer</a>* <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a2a5c63d683f8eacf51241ba809b8d8e0">buffer</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a14c2495e8da8ff9e2d0bbb157ea8b592"><div>
             <h3>
-              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html#a9bd6a16dbf97be857ffd5b4941e5bbec">redraw_<wbr/>event</a>&gt; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a14c2495e8da8ff9e2d0bbb157ea8b592">redraw_events</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html#a9bd6a16dbf97be857ffd5b4941e5bbec">redraw_<wbr/>event</a>&gt; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a14c2495e8da8ff9e2d0bbb157ea8b592">redraw_events</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a0d515fc6a723db9c2dc8d9d5045b9ede"><div>
             <h3>
-              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html#a31205c1d1a7dc0dc713f172c4e58b83b">focus_<wbr/>event</a>&gt; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a0d515fc6a723db9c2dc8d9d5045b9ede">focus_events</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;window.hpp&gt;</a></div>
+              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="classcat_1_1_window.html#a31205c1d1a7dc0dc713f172c4e58b83b">focus_<wbr/>event</a>&gt; <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a0d515fc6a723db9c2dc8d9d5045b9ede">focus_events</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="window_8hpp.html">&lt;base/window.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a55b93443595ca27fa02b6cae909c8ad9"><div>
             <h3>
-              <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#a55b93443595ca27fa02b6cae909c8ad9">position</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;positional.hpp&gt;</a></div>
+              <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#a55b93443595ca27fa02b6cae909c8ad9">position</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;base/positional.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="ac97e987e9fa5475f147152d69c3a3ea3"><div>
             <h3>
-              <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>BasicShell::<wbr/></span><a class="m-doc-self" href="#ac97e987e9fa5475f147152d69c3a3ea3">resolution</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;positional.hpp&gt;</a></div>
+              <a class="m-doc" href="structcat_1_1_vector2.html">Vector2</a> <span class="m-doc-details-prefix">cat::<wbr/>InputField::<wbr/></span><a class="m-doc-self" href="#ac97e987e9fa5475f147152d69c3a3ea3">resolution</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="positional_8hpp.html">&lt;base/positional.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>

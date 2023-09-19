@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>cat::config namespace | cat</title>
+  <title>buffer/scrollable.hpp file | cat</title>
   <link href="favicon-dark.png" rel="icon" type="image/png"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#22272e" name="theme-color"/>
@@ -54,8 +54,7 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespacecat.html">cat</a>::<wbr/></span>config <span class="m-thin">namespace</span>
-          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="config_8hpp.html">&lt;config.hpp&gt;</a></div>
+          <span class="m-breadcrumb"><a href="dir_b3323725a6dbce99e892fc3783bd927d.html">buffer</a>/</span>scrollable.hpp <span class="m-thin">file</span>
         </h1>
         <p></p>
         <nav class="m-block m-default poxy-toc" id="poxy-toc">
@@ -64,83 +63,24 @@
             <li>
               Reference
               <ul>
-                <li><a href="#func-members">Functions</a></li>
-                <li><a href="#var-members">Variables</a></li>
+                <li><a href="#namespaces">Namespaces</a></li>
+                <li><a href="#nested-classes">Classes</a></li>
               </ul>
             </li>
           </ul>
         </nav>
-        <section id="func-members">
-          <h2><a href="#func-members">Functions</a></h2>
+        <section id="namespaces">
+          <h2><a href="#namespaces">Namespaces</a></h2>
           <dl class="m-doc">
-            <dt id="aecde0ac940a5a0a24bb5436ca85554ab">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aecde0ac940a5a0a24bb5436ca85554ab">add_default</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; adefault) -&gt; <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp;</span>
-            </dt>
-            <dd></dd>
-            <dt id="ac40959c512f702a6cd56f3118f46e00e">
-              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#ac40959c512f702a6cd56f3118f46e00e">apply</a>(</span><span class="m-doc-wrap">)</span>
-            </dt>
-            <dd></dd>
-            <dt id="a2407621dfd1cfda0dbecdb9290551e44">
-              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a2407621dfd1cfda0dbecdb9290551e44">at</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/filesystem/path.html" target="_blank">fs::<wbr/>path</a>&amp; path)</span>
-            </dt>
-            <dd></dd>
-            <dt id="ab77a895c0ae41e81bb6705f0c7917cd9">
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">IniType type = IniType::Null</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#ab77a895c0ae41e81bb6705f0c7917cd9">ensure</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; key,
-              const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; section = "Main",
-              const IniElement&amp; value = IniElement())</span>
-            </dt>
-            <dd></dd>
-            <dt id="a0829fdb8309475c3fe9d8aefefbceb18">
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename T = IniElement</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a0829fdb8309475c3fe9d8aefefbceb18">get</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; key,
-              const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; section = "Main") -&gt; T</span>
-            </dt>
-            <dd></dd>
-            <dt id="a4190267b99def96c4ad54517f4730d4b">
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename T = IniElement</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a4190267b99def96c4ad54517f4730d4b">get_or</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; key,
-              const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; section,
-              const T&amp; g_or) -&gt; T</span>
-            </dt>
-            <dd></dd>
-            <dt id="a36d3ed812520d508af61b3f8f8b1aa97">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a36d3ed812520d508af61b3f8f8b1aa97">has</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; key,
-              const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; section = "Main") -&gt; bool</span>
-            </dt>
-            <dd></dd>
-            <dt id="a133fa366a698062586a0502787fe1863">
-              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a133fa366a698062586a0502787fe1863">sync</a>(</span><span class="m-doc-wrap">)</span>
-            </dt>
-            <dd></dd>
-            <dt id="a283896ac4958f990f6273fd6f1fd9224">
-              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a283896ac4958f990f6273fd6f1fd9224">write_default</a>(</span><span class="m-doc-wrap">)</span>
-            </dt>
+            <dt>namespace <a class="m-doc" href="namespacecat.html">cat</a></dt>
             <dd></dd>
           </dl>
         </section>
-        <section id="var-members">
-          <h2><a href="#var-members">Variables</a></h2>
+        <section id="nested-classes">
+          <h2><a href="#nested-classes">Classes</a></h2>
           <dl class="m-doc">
-            <dt id="a7f2140f4be37f46d45c07326f1b22b7a">
-              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a> <a class="m-doc-self" href="#a7f2140f4be37f46d45c07326f1b22b7a">config_defaults</a>
-            </dt>
-            <dd></dd>
-            <dt id="a0bb70764da6352c9dbfb92070cc6bd59">
-              <a class="m-doc" href="namespacecat_1_1signals.html#a1997644f6f84e4b8d869df87756c4350">signals::<wbr/>signal</a> <a class="m-doc-self" href="#a0bb70764da6352c9dbfb92070cc6bd59">config_error</a>
-            </dt>
-            <dd></dd>
-            <dt id="a80e18d841576299fb5975435efdfd317">
-              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/filesystem/path.html" target="_blank">fs::<wbr/>path</a> <a class="m-doc-self" href="#a80e18d841576299fb5975435efdfd317">config_file</a>
-            </dt>
-            <dd></dd>
-            <dt id="a0680d21caa935045f6aa7c6772b1bee6">
-              IniFile <a class="m-doc-self" href="#a0680d21caa935045f6aa7c6772b1bee6">config_mirror</a>
-            </dt>
-            <dd></dd>
-            <dt id="a5752f06260d4a2f24618e144d978cd02">
-              bool <a class="m-doc-self" href="#a5752f06260d4a2f24618e144d978cd02">opened</a>
+            <dt>
+              class <a class="m-doc" href="classcat_1_1_scrollable_buffer.html">cat::ScrollableBuffer</a>
             </dt>
             <dd></dd>
           </dl>

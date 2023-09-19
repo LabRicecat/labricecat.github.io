@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>cat::lib::LockableBuffer class | cat</title>
+  <title>cat::LockableBuffer class | cat</title>
   <link href="favicon-dark.png" rel="icon" type="image/png"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#22272e" name="theme-color"/>
@@ -54,8 +54,8 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespacecat.html">cat</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacecat_1_1lib.html">lib</a>::<wbr/></span>LockableBuffer <span class="m-thin">class</span>
-          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffers_8hpp.html">&lt;library/buffers.hpp&gt;</a></div>
+          <span class="m-breadcrumb"><a href="namespacecat.html">cat</a>::<wbr/></span>LockableBuffer <span class="m-thin">class</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="lockable_8hpp.html">&lt;buffer/lockable.hpp&gt;</a></div>
         </h1>
         <p></p>
         <nav class="m-block m-default poxy-toc" id="poxy-toc">
@@ -77,7 +77,7 @@
           <h2><a href="#base-classes">Base classes</a></h2>
           <dl class="m-doc">
             <dt>
-              class <a class="m-doc" href="classcat_1_1_buffer.html">cat::Buffer</a> <span class="m-label m-flat m-warning">virtual</span>
+              class <a class="m-doc" href="classcat_1_1_buffer.html">Buffer</a> <span class="m-label m-flat m-warning">virtual</span>
             </dt>
             <dd></dd>
           </dl>
@@ -110,20 +110,20 @@
               <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="classcat_1_1_buffer.html#ab177349ce4f9c54e230077c2b0f08456">composer</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespacecat.html#a42a11d320a68cf9b9622b72c7566bb31">Composer</a>&amp; <span class="m-label m-flat m-warning">virtual</span></span>
             </dt>
             <dd></dd>
-            <dt id="a8f5383d827c1c4dc042f1e33687f48ae">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a8f5383d827c1c4dc042f1e33687f48ae">display</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespacecat.html#a6dfb86ebbb1fb574ca0bbe6dd0bf407e">image_<wbr/>type</a> <span class="m-label m-flat m-warning">override</span></span>
+            <dt id="ad241e01d81608696ce5668891e0365dc">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ad241e01d81608696ce5668891e0365dc">display</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespacecat.html#a6dfb86ebbb1fb574ca0bbe6dd0bf407e">image_<wbr/>type</a> <span class="m-label m-flat m-warning">override</span></span>
             </dt>
             <dd></dd>
             <dt>
               <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="classcat_1_1_buffer.html#ad538c8cd142b6831a7b7315dd915d868">get_raw</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; <span class="m-label m-flat m-warning">virtual</span></span>
             </dt>
             <dd></dd>
-            <dt id="ab077ad2b0d8df4d4787e6e14d7ccd313">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ab077ad2b0d8df4d4787e6e14d7ccd313">lock</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="classcat_1_1lib_1_1_lockable_buffer.html">LockableBuffer</a>&amp; <span class="m-label m-flat m-warning">virtual</span></span>
+            <dt id="ac327391414f1aa7aaa5db0a93b6d843e">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ac327391414f1aa7aaa5db0a93b6d843e">lock</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="classcat_1_1_lockable_buffer.html">LockableBuffer</a>&amp; <span class="m-label m-flat m-warning">virtual</span></span>
             </dt>
             <dd></dd>
-            <dt id="aeb4143f645829d37ab43cfac91fc12e3">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aeb4143f645829d37ab43cfac91fc12e3">locked</a>(</span><span class="m-doc-wrap">) -&gt; bool <span class="m-label m-flat m-warning">virtual</span></span>
+            <dt id="af443fadfc7bbcb212556635b16035be7">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#af443fadfc7bbcb212556635b16035be7">locked</a>(</span><span class="m-doc-wrap">) -&gt; bool <span class="m-label m-flat m-warning">virtual</span></span>
             </dt>
             <dd></dd>
             <dt>
@@ -134,8 +134,8 @@
               <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="classcat_1_1_buffer.html#a773db26ce1b2b2297372ef384e006e55">set</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; raw) -&gt; <a class="m-doc" href="classcat_1_1_buffer.html">Buffer</a>&amp; <span class="m-label m-flat m-warning">virtual</span></span>
             </dt>
             <dd></dd>
-            <dt id="a9749383da8ffb9e1e11914f29410ee66">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a9749383da8ffb9e1e11914f29410ee66">unlock</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="classcat_1_1lib_1_1_lockable_buffer.html">LockableBuffer</a>&amp; <span class="m-label m-flat m-warning">virtual</span></span>
+            <dt id="a879fe2aaa55318f2c9a66a6a173e2639">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a879fe2aaa55318f2c9a66a6a173e2639">unlock</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="classcat_1_1_lockable_buffer.html">LockableBuffer</a>&amp; <span class="m-label m-flat m-warning">virtual</span></span>
             </dt>
             <dd></dd>
             <dt>
@@ -156,12 +156,12 @@
         <section id="pro-attribs">
           <h2><a href="#pro-attribs">Protected variables</a></h2>
           <dl class="m-doc">
-            <dt id="ac94d251ce304b959553f316a3671435b">
-              bool <a class="m-doc-self" href="#ac94d251ce304b959553f316a3671435b">is_locked</a>
+            <dt id="a9a81cb99b3cf4ca65e168fd40b3beddc">
+              bool <a class="m-doc-self" href="#a9a81cb99b3cf4ca65e168fd40b3beddc">is_locked</a>
             </dt>
             <dd></dd>
-            <dt id="a2c96c90e7bad219a48005ed3f88b8a8d">
-              <a class="m-doc" href="namespacecat.html#a6dfb86ebbb1fb574ca0bbe6dd0bf407e">image_<wbr/>type</a> <a class="m-doc-self" href="#a2c96c90e7bad219a48005ed3f88b8a8d">last_display</a>
+            <dt id="a613ac190c6985b7558571dd13184948d">
+              <a class="m-doc" href="namespacecat.html#a6dfb86ebbb1fb574ca0bbe6dd0bf407e">image_<wbr/>type</a> <a class="m-doc-self" href="#a613ac190c6985b7558571dd13184948d">last_display</a>
             </dt>
             <dd></dd>
             <dt>
@@ -186,57 +186,57 @@
           <h2>Function documentation</h2>
           <section class="m-doc-details" id="a3a06b3ec862c10fb06c01ace3a9a71c6"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_buffer.html">Buffer</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a3a06b3ec862c10fb06c01ace3a9a71c6">append</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; raw) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;buffer.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_buffer.html">Buffer</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a3a06b3ec862c10fb06c01ace3a9a71c6">append</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; raw) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;base/buffer.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="acd2e29c211eaf531c88d50efa2562d8f"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_buffer.html">Buffer</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#acd2e29c211eaf531c88d50efa2562d8f">clear</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;buffer.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_buffer.html">Buffer</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#acd2e29c211eaf531c88d50efa2562d8f">clear</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;base/buffer.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="ab177349ce4f9c54e230077c2b0f08456"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespacecat.html#a42a11d320a68cf9b9622b72c7566bb31">Composer</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ab177349ce4f9c54e230077c2b0f08456">composer</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;buffer.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespacecat.html#a42a11d320a68cf9b9622b72c7566bb31">Composer</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ab177349ce4f9c54e230077c2b0f08456">composer</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;base/buffer.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="ad538c8cd142b6831a7b7315dd915d868"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ad538c8cd142b6831a7b7315dd915d868">get_raw</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;buffer.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ad538c8cd142b6831a7b7315dd915d868">get_raw</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;base/buffer.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a035b0014a5cb1b802c6df79cc2807580"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespacecat.html#abd77a5f8f9a559e1be8ad238cd4a842d">Renderer</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a035b0014a5cb1b802c6df79cc2807580">renderer</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;buffer.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespacecat.html#abd77a5f8f9a559e1be8ad238cd4a842d">Renderer</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a035b0014a5cb1b802c6df79cc2807580">renderer</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;base/buffer.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a773db26ce1b2b2297372ef384e006e55"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_buffer.html">Buffer</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a773db26ce1b2b2297372ef384e006e55">set</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; raw) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;buffer.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_buffer.html">Buffer</a>&amp; <span class="m-doc-details-prefix">cat::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a773db26ce1b2b2297372ef384e006e55">set</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; raw) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;base/buffer.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a0931dc2d0bb21f325988d19deefff45f"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a0931dc2d0bb21f325988d19deefff45f">window</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;buffer.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a0931dc2d0bb21f325988d19deefff45f">window</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;base/buffer.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a3b808568b54905aec4504767b9e78247"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespacecat.html#a9956eac013712610ae19d4def66ff571">snippet_<wbr/>type</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a3b808568b54905aec4504767b9e78247">generate_snippet</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span> <span class="m-label m-warning">protected</span></span></span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;buffer.hpp&gt;</a></div>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespacecat.html#a9956eac013712610ae19d4def66ff571">snippet_<wbr/>type</a> <span class="m-doc-details-prefix">cat::<wbr/>LockableBuffer::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a3b808568b54905aec4504767b9e78247">generate_snippet</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span> <span class="m-label m-warning">protected</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;base/buffer.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
@@ -245,29 +245,29 @@
           <h2>Variable documentation</h2>
           <section class="m-doc-details" id="adc8abe1601570bea832399869b5011fa"><div>
             <h3>
-              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>LockableBuffer::<wbr/></span><a class="m-doc-self" href="#adc8abe1601570bea832399869b5011fa">raw</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;buffer.hpp&gt;</a></div>
+              <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a> <span class="m-doc-details-prefix">cat::<wbr/>LockableBuffer::<wbr/></span><a class="m-doc-self" href="#adc8abe1601570bea832399869b5011fa">raw</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;base/buffer.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="aa614e50d089f8e80d133b6de7bcd8678"><div>
             <h3>
-              <a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>LockableBuffer::<wbr/></span><a class="m-doc-self" href="#aa614e50d089f8e80d133b6de7bcd8678">assoc_window</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;buffer.hpp&gt;</a></div>
+              <a class="m-doc" href="classcat_1_1_window.html">Window</a>* <span class="m-doc-details-prefix">cat::<wbr/>LockableBuffer::<wbr/></span><a class="m-doc-self" href="#aa614e50d089f8e80d133b6de7bcd8678">assoc_window</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;base/buffer.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="a8554b926fdfde4f41c4fec6f28bc8576"><div>
             <h3>
-              <a class="m-doc" href="namespacecat.html#a42a11d320a68cf9b9622b72c7566bb31">Composer</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>LockableBuffer::<wbr/></span><a class="m-doc-self" href="#a8554b926fdfde4f41c4fec6f28bc8576">i_composer</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;buffer.hpp&gt;</a></div>
+              <a class="m-doc" href="namespacecat.html#a42a11d320a68cf9b9622b72c7566bb31">Composer</a> <span class="m-doc-details-prefix">cat::<wbr/>LockableBuffer::<wbr/></span><a class="m-doc-self" href="#a8554b926fdfde4f41c4fec6f28bc8576">i_composer</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;base/buffer.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
           <section class="m-doc-details" id="ab05693ceddb2335edeac6752062ae770"><div>
             <h3>
-              <a class="m-doc" href="namespacecat.html#abd77a5f8f9a559e1be8ad238cd4a842d">Renderer</a> <span class="m-doc-details-prefix">cat::<wbr/>lib::<wbr/>LockableBuffer::<wbr/></span><a class="m-doc-self" href="#ab05693ceddb2335edeac6752062ae770">i_renderer</a> <span class="m-label m-warning">protected</span>
-              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;buffer.hpp&gt;</a></div>
+              <a class="m-doc" href="namespacecat.html#abd77a5f8f9a559e1be8ad238cd4a842d">Renderer</a> <span class="m-doc-details-prefix">cat::<wbr/>LockableBuffer::<wbr/></span><a class="m-doc-self" href="#ab05693ceddb2335edeac6752062ae770">i_renderer</a> <span class="m-label m-warning">protected</span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="buffer_8hpp.html">&lt;base/buffer.hpp&gt;</a></div>
             </h3>
             <p></p>
           </div></section>
